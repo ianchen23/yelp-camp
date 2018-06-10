@@ -49,7 +49,7 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 app.use("/campgrounds", campgroundRoutes);
 
 // DB SEED:
-// seedDB();
+seedDB();
 
 // RUN
 app.listen(process.env.PORT, process.env.IP, function() {
