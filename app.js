@@ -22,7 +22,7 @@ app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 app.use(flash());
 // mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://heroku_5vlhdkf5:heroku_5vlhdkf5@ds245150.mlab.com:45150/heroku_5vlhdkf5");
+mongoose.connect("mongodb://ianchen23:c89t&34q@ds245150.mlab.com:45150/heroku_5vlhdkf5");
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
