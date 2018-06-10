@@ -21,7 +21,9 @@ app.use(express.json());
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 app.use(flash());
-mongoose.connect(process.env.MONGODB_URI);
+
+var url = process.env.MONGODB_URI || "mongodb://localhost/yelp_camp";
+mongoose.connect(url);
 // mongoose.connect("mongodb://localhost/yelp_camp");
 // mongoose.connect("mongodb://test:cg880523@ds245150.mlab.com:45150/heroku_5vlhdkf5");
 // process.env.databaseURL;
