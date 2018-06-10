@@ -24,9 +24,6 @@ app.use(flash());
 
 var url = process.env.MONGODB_URI || "mongodb://localhost/yelp_camp";
 mongoose.connect(url);
-// mongoose.connect("mongodb://localhost/yelp_camp");
-// mongoose.connect("mongodb://test:cg880523@ds245150.mlab.com:45150/heroku_5vlhdkf5");
-// process.env.databaseURL;
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
